@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidx.cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/gradient_background">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reserva en tu sede favorita"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp" />
+
+    <!-- SEDE ENVIGADO -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        androidx.cardview:cardCornerRadius="12dp"
+        androidx.cardview:cardElevation="8dp"
+        android:padding="15dp"
+        android:backgroundTint="#1E3A4C">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sede Envigado"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#62C6F2"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/txtTelefonoEnvigado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📞 Teléfono: 301-123-4567"
+                android:textSize="16sp"
+                android:textColor="#C3E0E5"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnLlamarEnvigado"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Llamar"
+                    android:backgroundTint="#0F2027"
+                    android:textColor="#FFFFFF"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/btnWhatsAppEnvigado"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="WhatsApp"
+                    android:backgroundTint="#0F2027"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- SEPARADOR -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C3E0E5"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- SEDE MEDELLÍN -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        androidx.cardview:cardCornerRadius="12dp"
+        androidx.cardview:cardElevation="8dp"
+        android:padding="15dp"
+        android:backgroundTint="#1E3A4C">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sede Medellín"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#62C6F2"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/txtTelefonoMedellin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📞 Teléfono: 302-987-6543"
+                android:textSize="16sp"
+                android:textColor="#C3E0E5"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnLlamarMedellin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Llamar"
+                    android:backgroundTint="#0F2027"
+                    android:textColor="#FFFFFF"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/btnWhatsAppMedellin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="WhatsApp"
+                    android:backgroundTint="#0F2027"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
