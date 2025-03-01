@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Sede Envigado -->
+        <ImageView
+            android:id="@+id/imgEnvigado"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/default_image"
+            android:contentDescription="Imagen de la sede Envigado" />
+
+        <TextView
+            android:id="@+id/txtDireccionEnvigado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dirección de la sede Envigado"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnVerMapaEnvigado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver en Google Maps"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginVertical="16dp" />
+
+        <!-- Sede Medellín -->
+        <ImageView
+            android:id="@+id/imgMedellin"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/default_image"
+            android:contentDescription="Imagen de la sede Medellín" />
+
+        <TextView
+            android:id="@+id/txtDireccionMedellin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dirección de la sede Medellín"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnVerMapaMedellin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver en Google Maps"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

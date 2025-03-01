@@ -14,12 +14,18 @@ public class ReservaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        // Activar el botón de retroceso en la ActionBar
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserva);
 
         // Datos de las sedes
-        String telefonoEnvigado = "+573001234567";
-        String telefonoMedellin = "+573002345678";
+        String telefonoEnvigado = "+573141234567";
+        String telefonoMedellin = "+573102345678";
 
         // Sede Envigado
         TextView txtEnvigado = findViewById(R.id.txtTelefonoEnvigado);
@@ -49,7 +55,7 @@ public class ReservaActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // Metodo para abrir WhatsApp con un mensaje predefinido
+    // Metodo para abrir WhatsApp con un mensaje
     private void abrirWhatsApp(String telefono, String mensaje) {
         try {
             Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -66,5 +72,14 @@ public class ReservaActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+    // Manejar el clic en el botón de retroceso
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish(); // Cierra la actividad y regresa
+        return true;
+    }
+
+
 
 }
