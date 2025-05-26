@@ -48,15 +48,17 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
-            // Guardar sesión activa
+// Guardar sesión activa con nombre y correo
             SharedPreferences sessionPrefs = getSharedPreferences("sesion", MODE_PRIVATE);
             sessionPrefs.edit()
                     .putBoolean("logueado", true)
                     .putString("correo", correo)
+                    .putString("nombre", nombreGuardado)
                     .apply();
 
+
             // Redirigir al perfil
-            Intent intent = new Intent(this, PerfilActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             intent.putExtra("nombre", nombreGuardado);
             intent.putExtra("correo", correo);
             startActivity(intent);
