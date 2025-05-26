@@ -1,5 +1,6 @@
 package com.example.myrestauranteali;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
@@ -58,6 +59,10 @@ public class SedesActivity extends AppCompatActivity {
             mapIntent.setPackage("com.google.android.apps.maps");
             startActivity(mapIntent);
         });
+
+        SharedPreferences prefs = getSharedPreferences("usuarios", MODE_PRIVATE);
+        String usuarioActivo = prefs.getString("usuario_activo", null);
+
     }
 
     private void setEstadoAbiertoCerrado(TextView textView, int horaApertura, int horaCierre) {
