@@ -25,7 +25,23 @@
             android:text="Dirección de la sede Envigado"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:padding="8dp" />
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtHorarioEnvigado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horario"
+            android:textSize="14sp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/estadoEnvigado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
 
         <Button
             android:id="@+id/btnVerMapaEnvigado"
@@ -56,7 +72,23 @@
             android:text="Dirección de la sede Medellín"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:padding="8dp" />
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtHorarioMedellin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horario"
+            android:textSize="14sp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/estadoMedellin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
 
         <Button
             android:id="@+id/btnVerMapaMedellin"
