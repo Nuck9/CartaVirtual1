@@ -31,15 +31,15 @@
     <!-- Botón Menú -->
     <Button
         android:id="@+id/btnMenu"
-        android:layout_width="match_parent"
+        android:layout_width="375dp"
         android:layout_height="wrap_content"
-        android:text="Menú"
-        android:textColor="@color/white"
+        android:layout_marginBottom="12dp"
         android:backgroundTint="#0F2027"
         android:drawableLeft="@drawable/ic_menu"
         android:drawablePadding="12dp"
-        app:cardCornerRadius="16dp"
-        android:layout_marginBottom="12dp"/>
+        android:text="Menú"
+        android:textColor="@color/white"
+        app:cardCornerRadius="16dp" />
 
     <!-- Botón Sedes -->
     <Button
