@@ -66,5 +66,15 @@
         app:cardCornerRadius="16dp"
        />
 
+    <!-- Botón Reservas en linea -->
+    <Button
+        android:id="@+id/btnReservas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0F2027"
+        android:drawableLeft="@drawable/ic_phone"
+        android:text="Reservas En linea"
+        android:textColor="@color/white"
+        app:cardCornerRadius="16dp" />
 
 </LinearLayout>

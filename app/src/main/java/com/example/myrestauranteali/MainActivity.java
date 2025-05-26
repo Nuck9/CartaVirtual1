@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnMenu = findViewById(R.id.btnMenu);
         Button btnSedes = findViewById(R.id.btnSedes);
         Button btnContacto = findViewById(R.id.btnContacto);
+        Button btnReservas = findViewById(R.id.btnReservas);
 
         btnMenu.setOnClickListener(view -> {
             Intent i = new Intent(this, MenuActivity.class);
@@ -39,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
 
         btnContacto.setOnClickListener(view -> {
             Intent i = new Intent(this, ReservaActivity.class);
+            startActivity(i);
+
+
+        });
+
+        btnReservas.setOnClickListener(view -> {
+            Intent i = new Intent(this, ReservaAutomaticaActivity.class);
             startActivity(i);
 
 
