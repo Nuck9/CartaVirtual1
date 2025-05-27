@@ -22,4 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Contacto" />
+
+    <Button
+        android:id="@+id/btnDejarResena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dejar Reseña"
+        android:layout_margin="16dp" />
+
 </LinearLayout>

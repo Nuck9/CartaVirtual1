@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class InicioFragment extends Fragment {
 
-    Button btnMenu, btnSedes, btnContacto;
+    Button btnMenu, btnSedes, btnContacto, btnDejarResena;
 
     @Nullable
     @Override
@@ -23,6 +23,7 @@ public class InicioFragment extends Fragment {
         btnMenu = view.findViewById(R.id.btnMenu);
         btnSedes = view.findViewById(R.id.btnSedes);
         btnContacto = view.findViewById(R.id.btnContacto);
+        btnDejarResena = view.findViewById(R.id.btnDejarResena);
 
         btnMenu.setOnClickListener(v -> {
             Intent i = new Intent(getActivity(), MenuActivity.class);
@@ -39,6 +40,12 @@ public class InicioFragment extends Fragment {
             startActivity(i);
         });
 
+        btnDejarResena.setOnClickListener(v -> {
+            Intent i = new Intent(getActivity(), ElegirResenaActivity.class);
+            startActivity(i);
+        });
+
         return view;
+
     }
 }

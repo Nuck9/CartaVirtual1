@@ -17,6 +17,17 @@ public class MenuItemInfo {
     public String getDescripcion() { return descripcion; }
     public int getPrecio() { return precio; }
     public int getImagenResId() { return imagenResId; }
+
+    private float estrellas;
+
+    public float getEstrellas() {
+        return estrellas;
+    }
+
+    public void setEstrellas(float estrellas) {
+        this.estrellas = estrellas;
+    }
+
 }
 
 

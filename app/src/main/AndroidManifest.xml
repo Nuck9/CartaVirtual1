@@ -15,6 +15,24 @@
         android:theme="@style/Theme.MyRestauranteAli"
         tools:targetApi="31">
         <activity
+            android:name=".DejarResenaSedeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DejarResenaPlatoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElegirSedeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElegirPlatoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElegirCategoriaPlatoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElegirResenaActivity"
+            android:exported="false" />
+        <activity
             android:name=".PerfilActivity"
             android:exported="false" />
         <activity
