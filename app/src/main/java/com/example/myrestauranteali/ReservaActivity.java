@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.util.Patterns;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,7 +37,7 @@ public class ReservaActivity extends AppCompatActivity {
         Button btnWhatsAppEnvigado = findViewById(R.id.btnWhatsAppEnvigado);
 
         btnLlamarEnvigado.setOnClickListener(v -> llamar(telefonoEnvigado));
-        btnWhatsAppEnvigado.setOnClickListener(v -> abrirWhatsApp(telefonoEnvigado, "Hola, quiero hacer una reserva en la sede de Envigado."));
+        btnWhatsAppEnvigado.setOnClickListener(v -> abrirWhatsApp(telefonoEnvigado, "Hola, quiero hacer una reserva personalizada en la sede de Envigado."));
 
         // Sede Medellín
         TextView txtMedellin = findViewById(R.id.txtTelefonoMedellin);
@@ -45,7 +47,44 @@ public class ReservaActivity extends AppCompatActivity {
         Button btnWhatsAppMedellin = findViewById(R.id.btnWhatsAppMedellin);
 
         btnLlamarMedellin.setOnClickListener(v -> llamar(telefonoMedellin));
-        btnWhatsAppMedellin.setOnClickListener(v -> abrirWhatsApp(telefonoMedellin, "Hola, quiero hacer una reserva en la sede de Medellín."));
+        btnWhatsAppMedellin.setOnClickListener(v -> abrirWhatsApp(telefonoMedellin, "Hola, quiero hacer una reserva personalizada en la sede de Medellín."));
+
+        // Formulario de contacto
+        EditText editNombre = findViewById(R.id.editNombre);
+        EditText editCorreo = findViewById(R.id.editCorreo);
+        EditText editMensaje = findViewById(R.id.editMensaje);
+        Button btnEnviar = findViewById(R.id.btnEnviar);
+
+        btnEnviar.setOnClickListener(v -> {
+            String nombre = editNombre.getText().toString().trim();
+            String correo = editCorreo.getText().toString().trim();
+            String mensaje = editMensaje.getText().toString().trim();
+
+            if (nombre.isEmpty() || correo.isEmpty() || mensaje.isEmpty()) {
+                Toast.makeText(this, "Por favor completa todos los campos", Toast.LENGTH_SHORT).show();
+            } else if (!Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
+                Toast.makeText(this, "Correo no válido", Toast.LENGTH_SHORT).show();
+            } else {
+                // Aquí podrías enviar el mensaje a un servidor o email real
+                Toast.makeText(this, "Mensaje enviado correctamente", Toast.LENGTH_LONG).show();
+                editNombre.setText("");
+                editCorreo.setText("");
+                editMensaje.setText("");
+            }
+        });
+
+        // Botones de redes sociales
+        Button btnFacebook = findViewById(R.id.btnFacebook);
+        Button btnInstagram = findViewById(R.id.btnInstagram);
+
+        btnFacebook.setOnClickListener(v -> abrirRedSocial("https://www.facebook.com/MirestauranteAli"));
+        btnInstagram.setOnClickListener(v -> abrirRedSocial("https://www.instagram.com/MirestauranteAli"));
+
+    }
+
+    private void abrirRedSocial(String url) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(intent);
     }
 
     // Metodo para hacer llamadas

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Barra superior con título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mi Restaurante Ali"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Logo de un chef -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_logo"
+        android:contentDescription="Logo del Chef"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Botón Menú -->
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menú"
+        android:textColor="@color/white"
+        android:backgroundTint="#0F2027"
+        android:drawableLeft="@drawable/ic_menu"
+        android:drawablePadding="12dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Botón Sedes -->
+    <Button
+        android:id="@+id/btnSedes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sedes"
+        android:textColor="@color/white"
+        android:backgroundTint="#0F2027"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="12dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Botón Contacto -->
+    <Button
+        android:id="@+id/btnContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacto"
+        android:textColor="@color/white"
+        android:backgroundTint="#0F2027"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="12dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón Dejar Reseña -->
+    <Button
+        android:id="@+id/btnDejarResena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dejar Reseña"
+        android:textColor="@color/white"
+        android:backgroundTint="#0F2027"
+        android:drawableLeft="@drawable/ic_resena"
+        android:drawablePadding="12dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón Reserva Automatica -->
+    <Button
+        android:id="@+id/btnReservaA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reserva Automatica"
+        android:textColor="@color/white"
+        android:backgroundTint="#0F2027"
+        android:drawableLeft="@drawable/ic_reserva2"
+        android:drawablePadding="12dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginBottom="12dp" />
+</LinearLayout>
