@@ -27,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
             int id = item.getItemId();
             if (id == R.id.nav_inicio) {
                 fragment = new InicioFragment();
-            } else if (id == R.id.nav_carrito) {
-                fragment = new CarritoFragment();
             } else if (id == R.id.nav_perfil) {
                 fragment = new PerfilFragment();
             }

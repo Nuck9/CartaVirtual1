@@ -76,12 +76,5 @@
         android:layout_gravity="top|end"
         android:layout_margin="12dp" />
 
-    <Button
-        android:id="@+id/btnDejarResena"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dejar reseña"
-        android:layout_marginTop="16dp" />
-
 
 </FrameLayout>
