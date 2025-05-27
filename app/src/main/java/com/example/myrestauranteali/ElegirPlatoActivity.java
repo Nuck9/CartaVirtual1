@@ -18,6 +18,11 @@ public class ElegirPlatoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        // Activar el botón de retroceso en la ActionBar
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_elegir_plato);
 
@@ -83,6 +88,10 @@ public class ElegirPlatoActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, platosArray);
         listPlatos.setAdapter(adapter);
     }
-
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish(); // Cierra la actividad y regresa
+        return true;
+    }
 }
 

@@ -1,4 +1,5 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,6 +13,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp"
+            android:layout_marginTop="50dp"
             android:gravity="center_horizontal">
 
             <!-- Layout para usuario logueado -->
@@ -26,19 +28,27 @@
                     android:id="@+id/tvNombre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nombre: Usuario" />
+                    android:text="Nombre: Usuario"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
 
                 <TextView
                     android:id="@+id/tvCorreo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Correo: ejemplo@mail.com" />
+                    android:text="Correo: ejemplo@mail.com"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="16dp" />
 
                 <Button
                     android:id="@+id/btnCerrarSesion"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cerrar sesión" />
+                    android:text="Cerrar sesión"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#D32F2F"
+                    app:cardCornerRadius="16dp"
+                    android:layout_marginBottom="12dp" />
 
             </LinearLayout>
 
@@ -52,15 +62,23 @@
 
                 <Button
                     android:id="@+id/btnIrLogin"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Iniciar sesión" />
+                    android:text="Iniciar sesión"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#1976D2"
+                    app:cardCornerRadius="16dp"
+                    android:layout_marginBottom="12dp" />
 
                 <Button
                     android:id="@+id/btnIrRegistro"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Registrarse" />
+                    android:text="Registrarse"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#388E3C"
+                    app:cardCornerRadius="16dp"
+                    android:layout_marginBottom="12dp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
@@ -70,11 +88,11 @@
         android:id="@+id/btnConfiguracion"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:src="@drawable/ic_logo"
+        android:src="@drawable/ic_confi4"
         android:contentDescription="Configuración"
+        android:scaleType="centerInside"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:layout_gravity="top|end"
         android:layout_margin="12dp" />
-
 
 </FrameLayout>
