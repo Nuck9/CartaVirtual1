@@ -35,7 +35,7 @@ public class ReservaAutomaticaActivity extends AppCompatActivity {
         btnReservar = findViewById(R.id.btnReservar);
 
         // Listas para los spinners
-        String[] sedes = {"Sede Centro", "Sede Norte", "Sede Sur"};
+        String[] sedes = {"Sede Medellin", "Sede Envigado"};
         String[] horarios = {"10:00", "11:00", "12:00", "13:00", "14:00", "15:00"};
 
         // Adaptadores para spinners
